@@ -1,0 +1,20 @@
+name: "OpenSource"
+
+services:
+    cli:
+        container_name: "cli"
+        volumes:
+            - '.:/var/www/html'
+        build:
+            context: .
+            dockerfile: .docker/cli.DockerFile
+
+    web:
+        container_name: "nginx"
+        volumes:
+            - '.:/var/www/html'
+        build:
+            context: .
+            dockerfile: .docker/nginx.DockerFile
+        ports:
+            - "8080:8080"

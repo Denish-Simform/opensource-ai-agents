@@ -1,0 +1,4 @@
+.build/docker/volumes
+.github
+vendor
+bootstrap/cache/*.php
