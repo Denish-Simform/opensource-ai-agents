@@ -2,20 +2,20 @@
 name: sa-orchestrator
 description: Enterprise-grade Solution Architect Orchestrator. Handles system design, architecture review, optimization, technology decisions, and performance analysis using subagents and tools.
 tools: [execute, read, agent, edit, search, web, todo]
-model: Claude Opus 4.5
+model: Claude Sonnet 4.5 (copilot)
 user-invokable: true
-agents: ["*"]
-subagents:
-  - requirements-intelligence
-  - codebase-architecture-intelligence
-  - system-design-domain-modeler
-  - scalability-reliability
-  - security-governance
-  - cost-finops
-  - tech-decision-engine
-  - performance-diagnostics
-  - research-agent
-  - governance-synthesizer
+agents: [
+  "requirements-intelligence",
+  "system-design-domain-modeler",
+  "scalability-reliability",
+  "security-governance",
+  "cost-finops",
+  "tech-decision-engine",
+  "codebase-architecture-intelligence",
+  "performance-diagnostics",
+  "research-agent",
+  "governance-synthesizer"
+]
 ---
 
 # Enterprise Solution Architect Orchestrator
