@@ -18,5 +18,8 @@
     "./skills/architecture-confidence-scoring",
     "./skills/runtime-environment-detection",
     "./skills/subagent-response-protocol"
+  ],
+  "prompts": [
+    ".github/prompts/generate-pr.prompt.md"
   ]
 }
