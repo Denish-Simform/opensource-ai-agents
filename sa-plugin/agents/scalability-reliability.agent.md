@@ -1,8 +1,8 @@
 ---
 name: scalability-reliability
 description: Evaluates scalability strategy and reliability posture of a proposed or existing system design.
-tools : [vscode, execute, read, agent, edit, search, web, todo]
-user-invokable: false
+tools: [vscode, execute, read, agent, edit, search, web, todo]
+user-invocable: false
 model: Claude Sonnet 4.5 (copilot)
 ---
 
@@ -75,6 +75,50 @@ Do not speculate beyond provided information.
 Present under:
 
 ## Potential Bottlenecks
+
+---
+
+# 7. Response Protocol (MANDATORY)
+
+When reporting back to orchestrator, you MUST:
+
+1. **Calculate confidence**: Use `architecture-confidence-scoring` skill
+   - Evidence: Load testing results (10%)
+   - Evidence: Capacity planning completeness
+   - Evidence: Performance optimization
+   - Evidence: Monitoring/DR strategy
+   - Gaps: Untested scalability assumptions
+   
+2. **Use standard format**: Follow `subagent-response-protocol`
+   - Use template: `scalability-reliability-template.md`
+   - Include all 6 sections: Header, Confidence, Summary, Evidence, Gaps, Recommendation
+   - Keep response to 150-280 tokens
+
+## Response Template
+
+```markdown
+## Scalability Reliability Assessment
+
+**Confidence: [LEVEL] ([SCORE]%)**
+
+### Summary
+[Scalability validation status, capacity readiness, key findings]
+
+### Evidence
+- Load testing: [Complete/Partial/Missing] ([X]%) — [Details]
+- Capacity planning: [Complete/Partial/Missing]
+- Autoscaling: [Configured/Not configured]
+- Monitoring: [Complete/Partial/Missing]
+
+### Gaps
+- [Scalability gap 1]
+- [Reliability gap 2]
+
+### Recommendation
+[Approved/Not ready for production. Items to address.]
+```
+
+See `subagent-response-protocol` skill for complete specification.
 
 ---
 

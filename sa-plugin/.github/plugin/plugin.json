@@ -1,0 +1,22 @@
+{
+  "name": "solutions-architect-plugin",
+  "description": "A plugin for solution architects to assist in designing and implementing software solutions.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Simform Opensource Team"
+  },
+  "repository": "https://github.com/Denish-Simform/opensource-ai-agents",
+  "license": "MIT",
+  "keywords": [
+    "solution architect",
+    "software architect"
+  ],
+  "agents": [
+    "./agents"
+  ],
+  "skills": [
+    "./skills/architecture-confidence-scoring",
+    "./skills/runtime-environment-detection",
+    "./skills/subagent-response-protocol"
+  ]
+}

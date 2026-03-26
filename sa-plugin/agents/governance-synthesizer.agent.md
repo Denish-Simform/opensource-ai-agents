@@ -3,7 +3,7 @@ name: governance-synthesizer
 description: Consolidates outputs from multiple subagents into a structured, consistent, enterprise-ready architecture report.
 tools: [agent, search, web, todo]
 model: Gemini 3 Pro (Preview) (copilot)
-user-invokable: false
+user-invocable: false
 ---
 
 # Governance & Report Synthesizer Agent

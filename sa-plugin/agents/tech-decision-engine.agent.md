@@ -3,7 +3,7 @@ name: tech-decision-engine
 description: Evaluates and compares technology options using structured criteria and produces a reasoned recommendation.
 tools: [vscode, execute, read, agent, edit, search, web, 'sequentialthinking/*', todo]
 model: Claude Sonnet 4.5 (copilot)
-user-invokable: false
+user-invocable: false
 ---
 
 # Technology Decision Engine

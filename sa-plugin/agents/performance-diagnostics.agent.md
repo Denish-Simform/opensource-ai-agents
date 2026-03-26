@@ -3,7 +3,7 @@ name: performance-diagnostics
 description: Analyzes performance issues, latency problems, workload spikes, and system bottlenecks at a high level.
 tools: [vscode, execute, read, agent, edit, search, web, todo]
 model: Claude Sonnet 4.5 (copilot)
-user-invokable: false
+user-invocable: false
 ---
 
 # Performance & Diagnostics Agent

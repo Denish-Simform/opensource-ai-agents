@@ -2,7 +2,7 @@
 name: codebase-architecture-intelligence
 description: Analyzes existing codebase and detects architecture patterns, structural quality, coupling risks, and technical maturity using repository context.
 tools: [vscode, execute, read, agent, edit, search, web, todo, github/*]
-user-invokable: false
+user-invocable: false
 model: GPT-5.2-Codex (copilot)
 ---
 

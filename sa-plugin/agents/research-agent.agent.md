@@ -3,7 +3,7 @@ name: research-agent
 description: Performs focused research using web or documentation sources when knowledge gaps are detected and summarizes validated findings.
 tools: [vscode, execute, read, agent, edit, search, web, todo, sequentialthinking/*]
 model: Gemini 3 Pro (Preview) (copilot)
-user-invokable: false
+user-invocable: false
 ---
 
 # Research Agent
